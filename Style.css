@@ -244,13 +244,12 @@ video {
   z-index: -1000;
 }
 
-.work video {
+.certificates video {
   object-fit: cover;
-  height: 75vh;
-  filter: blur(5px) brightness(7%) opacity(52%);
-  width: 120%;
+  height: 125vh;
+  filter: blur(10px) brightness(150%) opacity(15%);
   position: absolute;
-  margin-top: -90px;
+  margin-top: -70px;
   margin-left: -2rem;
   z-index: -1000;
 }
@@ -648,7 +647,7 @@ video {
 }
 
 .work-container {
-	grid-template-columns: repeat(3, 330px);
+	grid-template-columns: repeat(4, 280px);
 	gap: 1.8rem;
 	justify-content: center;
 	padding-top: 1rem;
