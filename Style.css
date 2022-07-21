@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 :root {
 
@@ -189,8 +189,8 @@ input {
 	position: relative;
 	transition: .4s;
 }
-
 .navlink.activehref, .navlink:hover {
+
 	color: var(--skin-color);
 	transition: all .4s
 }
@@ -264,7 +264,7 @@ video {
 }
 
 .inside2 {
-  height: calc(100vh + 120px);
+  height: calc(120vh + 120px);
 
 
 }
@@ -406,6 +406,15 @@ video {
 }
 .buttonicon {
 	font-size: 1.25rem;
+}
+.abilities {
+  height: 125vh ;
+}
+.abilities video {
+  height: 125vh;
+}
+.certificates {
+  height: 125vh ;
 }
 
 .button:hover::after {
