@@ -238,12 +238,15 @@ main {
 }
 
 section {
-  height: 100vh ;
+  height: 115vh ;
 
+}
+.home video {
+  height: 100vh;
 }
 video {
   object-fit: cover;
-  height: 100vh;
+  height: 115vh;
   filter: blur(5px) brightness(47%) opacity(52%);
   width: 120%;
   position: absolute;
