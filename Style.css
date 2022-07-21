@@ -177,6 +177,9 @@ input {
 	margin: -2px auto 0 auto;
 }
 
+.nav-close {
+      display: none;
+}
 .navlink {
 	height: 100%;
 	line-height: 100px;
@@ -233,6 +236,11 @@ main {
 	height: 100vh;
 	padding-left: 30px;
 }
+
+section {
+  height: 100vh ;
+
+}
 video {
   object-fit: cover;
   height: 100vh;
@@ -244,27 +252,26 @@ video {
   z-index: -1000;
 }
 
-.certificates video {
-  object-fit: cover;
-  height: 125vh;
-  filter: blur(10px) brightness(150%) opacity(15%);
-  position: absolute;
-  margin-top: -70px;
-  margin-left: -2rem;
-  z-index: -1000;
-}
 .homecontainer {
 	position: relative;
 	height: 100%;
 	align-items: center;
 }
-
 .inside {
-    height: 100vh;
   margin-top: -120px !important;
   filter: blur(5px) brightness(67%) opacity(22%);
 
 }
+
+.inside2 {
+  height: calc(100vh + 120px);
+
+
+}
+.worksect {
+  height: 5vh;
+}
+
 .homesocial {
 	position: absolute;
 	top: 1.8rem;
@@ -821,14 +828,6 @@ textarea.input {
 	align-items: center
 }
 
-.nav-close {
-	font-size: 1.5rem;
-	position: absolute;
-	top: 1rem;
-	right: 1.25rem;
-	cursor: pointer;
-	display: none;
-}
 
 .hacktheboxicon {
 	max-width: 32px;
@@ -879,6 +878,17 @@ textarea.input {
 		margin-left: var(--mb-1-5);
 		margin-right: var(--mb-1-5);
 	}
+  .certificates {
+    height: 175vh;
+  }
+  .certificates video {
+    height: 175vh;
+  }
+  .certificates-container {
+    grid-template-columns: repeat(3, 150px);
+
+  }
+
 
 	.sidebar {
 
@@ -914,9 +924,9 @@ textarea.input {
 
 	.navlist {
 		flex-direction: column;
-		height: 100%;
 		justify-content: center;
 		align-items: center;
+    height: 100%;
 	}
 
 	.navlink {
@@ -928,15 +938,37 @@ textarea.input {
 		bottom: 0;
 	}
 
+
 	.nav-close {
 		display: block;
-		color: var(--skin-color);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    cursor: pointer;
+
+		color: var(--text-color);
 	}
 
 	.about-img {
 		width: 350px;
 	}
 
+.about {
+  height: 150vh
+}
+.about video {
+  height: 150vh
+}
+.home video {
+  height: 135vh;
+      margin-top: -20vh;
+}
+.abilities {
+  height: 175vh
+}
+.abilities video {
+  height: 175vh
+}
 	.about-container {
 		grid-template-columns: 1fr;
 		row-gap: 2.5rem;
@@ -993,7 +1025,13 @@ textarea.input {
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
 
+  .qualification {
+    height: 150vh
+  }
 
+  .qualification video {
+    height: 150vh
+  }
 .hacking-portfolio {
 	font-size: var(--h2-font-size);
 		text-align: center;
@@ -1029,38 +1067,54 @@ textarea.input {
 }
 
 @media screen and (max-width: 576px) {
+  .certificates {
+    height: 275vh;
+  }
 
+  .nav-close {
+    position: absolute;
+    top: 1rem;
+  	right: 1.25rem !important;
+
+  }
+  .certificates video {
+    height: 275vh;
+  }
 		.abilities-info {
 			justify-self: center;
 	display: grid;
 	grid-template-columns: repeat(1, 200px);
 	column-gap: 1.5rem;
 	}
+  .abilities {
+    height: 280vh;
+  }
+  .abilities video {
+    height: 280vh;
+  }
+
+    .certificates-container {
+      grid-template-columns: repeat(2, 150px);
+
+    }
 
 	.nav-toggle {
 		right: initial;
 		left: 1.5rem;
 	}
 
-	video {
-  height: 85vh;
+
+.homedata {
+  		position: relative;
+  top: -25vh;
+  left: -1.5em;
+
 }
-
-	.home {
-		background-image: none;
-		height: initial;
-		align-items: initial;
-		padding: 7rem 0 2rem;
-	}
-
-	.homecontainer {
-		row-gap: 2rem
-	}
 
 	.homesocial {
 		position: relative;
-		top: -7.75rem;
-		left: 1.5rem;
+    top: -20vh;
+
 		justify-self: center;
 	}
 
@@ -1082,15 +1136,6 @@ textarea.input {
 		font-size: var(--normal-font-size);
 	}
 
-	.homesocial-follow::after {
-	content: "";
-	position: absolute;
-	width: 0.75rem;
-	height: 2px;
-	background-color: var(--text-color);
-	right: -25%;
-	top:  50%;
-}
 
 	.about-info {
 		grid-template-columns: repeat(3, 1fr);
@@ -1106,7 +1151,11 @@ textarea.input {
 
 
 }
-
+@media screen and (min-width: 576px) {
+.nav-close {
+  left: 1.25rem;
+}
+}
 /* For Small Devices */
 @media screen and (max-width: 350px) {
 
